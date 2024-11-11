@@ -1,0 +1,28 @@
+# Configuration file for fine-tuning TCRT5
+
+# All paths are relative to the root directory of the repository
+data:
+  train_source: 'data/pmhc2tcr_topk_train_source_dedup_uf.txt'
+  train_target: 'data/pmhc2tcr_topk_train_target_dedup_uf.txt'
+  val_source: 'data/pmhc2tcr_topk_val_source_dedup.txt'
+  val_target: 'data/pmhc2tcr_topk_val_target_dedup.txt'
+
+model:
+  name: 'dkarthikeyan1/tcrt5_pre_tcrdb'
+
+tokenizer:
+  name: 'dkarthikeyan1/tcrt5_pre_tcrdb'
+  src_max_len: 52
+  trg_max_len: 25
+
+training_args:
+  output_dir: 'model_checkpoints/TCRT5-FT_20_eps'
+  num_train_epochs: 20
+  per_device_train_batch_size: 128
+  per_device_eval_batch_size: 128
+  eval_steps: 1000
+  save_steps: 2000
+  learning_rate: 1e-4
+  weight_decay: 0.001
+  logging_steps: 100
+  save_total_limit: 100

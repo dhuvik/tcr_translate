@@ -1,3 +1,9 @@
+# Custom gitignore for Python projects
+.gitignore
+src/hf_helpers.py
+tests/test_hf_helpers.py
+data/topk_train_df_dedup_uf.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
