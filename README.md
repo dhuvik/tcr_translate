@@ -96,12 +96,14 @@ If you would like to see a more detailed demo of our model, please check out our
 
 ### Citation
 
+```
 @article{dkarthikeyan2024tcrtranslate,
 title={TCR-TRANSLATE: Conditional Generation of Real Antigen-Specific T-cell Receptor Sequences},
 author={Dhuvarakesh Karthikeyan and Colin Raffel and Benjamin Vincent and Alex Rubinsteyn},
 journal={bioArXiv},
 year={2024},
 }
+```
 
 
 
