@@ -5,9 +5,9 @@ of a well known data sparsity issue that has hindered numerous efforts at modeli
 We apply techniques from low-resourced machine translation to standard sequence-to-sequence modeling, including data augmentation, 
 joint pre-training, and bidirectional training, to boost the sampling of experimentally validated antigen-specific TCRs. 
 By constructing a target-rich validation set on well studied epitopes, we release TCRT5, a T5-based model that performed well on accuracy and diversity
-metrics. The model demonstrated remarkable generalization capability, successfully generating valid CDR3$\beta$ sequences for epitopes outside 
+metrics. The model demonstrated remarkable generalization capability, successfully generating valid CDR3b sequences for epitopes outside 
 its training distribution. While the current implementation establishes the capacity of seq2seq models to recapitulate accurate  
-TCR sequence information by focusing on the functionally diverse CDR3$\beta$ sequences, we hope to apply this framework for computational 
+TCR sequence information by focusing on the functionally diverse CDR3b sequences, we hope to apply this framework for computational 
  whole receptor TCR design that can significantly accelerate therapeutic development pipelines.
 
  ![](assets/tcr_translate_logo2.png)
@@ -25,7 +25,7 @@ Additional models will be released as they are evaluated and deemed useful. Plea
  
 ### Model Usage
 
-You can use this model directly for conditional CDR3 \\(\beta\\) generation:
+You can use this model directly for conditional CDR3b generation:
 
 ```python
 import re
@@ -59,7 +59,7 @@ cdr3b_sequences = [re.sub(r'\[.*\]', '', x) for x in tokenizer.batch_decode(outp
  'CASSLGTGGNQPQHF']
 ```
 
-This model can also be used for unconditional generation of CDR3 \\(\beta\\) sequences:
+This model can also be used for unconditional generation of CDR3b sequences:
 
 ```python
 import re
