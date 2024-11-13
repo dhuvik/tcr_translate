@@ -6,16 +6,16 @@ We apply techniques from low-resourced machine translation to standard sequence-
 joint pre-training, and bidirectional training, to boost the sampling of experimentally validated antigen-specific TCRs. 
 By constructing a target-rich validation set on well studied epitopes, we release TCRT5, a T5-based model that performed well on accuracy and diversity
 metrics. The model demonstrated remarkable generalization capability, successfully generating valid CDR3b sequences for epitopes outside 
-its training distribution. While the current implementation establishes the capacity of seq2seq models to recapitulate accurate  
+its training distribution. While the current implementation establishes the capacity of seq2seq models to recapitulate accurate 
 TCR sequence information by focusing on the functionally diverse CDR3b sequences, we hope to apply this framework for computational 
- whole receptor TCR design that can significantly accelerate therapeutic development pipelines.
+whole receptor TCR design that can significantly accelerate therapeutic development pipelines.
 
- ![](assets/tcr_translate_logo2.png)
+![](assets/tcr_translate_logo2.png)
 
 ### How to use
 
 This repository contains the raw data, results, and code for training and evaluating our flagship TCRT5 (finetuned) model. If you would 
-like to use our model directly, we make our model available on HuggingFace's model hub. You can use direclty use the models here. 
+like to use our model directly, we make our model available on HuggingFace's model hub. You can find the models here: 
  
  * [TCRT5 (finetuned)](https://huggingface.co/dkarthikeyan1/tcrt5_ft_tcrdb)
  * [TCRT5 (pre-trained)](https://huggingface.co/dkarthikeyan1/tcrt5_ft_tcrdb)
@@ -92,7 +92,11 @@ uncond_cdr3b_sequences = [re.sub(r'\[.*\]', '', x) for x in tokenizer.batch_deco
  'CASSLGQGAYEQYF']
 ```
 
-If you would like to see a more detailed demo of our model, please check out our [demo notebook](google.com).
+If you would like to see a more detailed demo of our model, please check out our Colab notebook [Coming Soon](google.com).
+
+### Contact
+
+For more information please reach out to us at: {dkarthikeyan1, alex.rubinsteyn}@unc.edu
 
 ### Citation
 
@@ -104,6 +108,3 @@ journal={bioArXiv},
 year={2024},
 }
 ```
-
-
-
