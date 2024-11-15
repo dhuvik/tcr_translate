@@ -18,7 +18,7 @@ This repository contains the raw data, results, and code for training and evalua
 like to use our model directly, we make our model available on HuggingFace's model hub. You can find the models here: 
  
  * [TCRT5 (finetuned)](https://huggingface.co/dkarthikeyan1/tcrt5_ft_tcrdb)
- * [TCRT5 (pre-trained)](https://huggingface.co/dkarthikeyan1/tcrt5_ft_tcrdb)
+ * [TCRT5 (pre-trained)](https://huggingface.co/dkarthikeyan1/tcrt5_pre_tcrdb)
 
 Additional models will be released as they are evaluated and deemed useful. Please check this 
 [HuggingFace collection](https://huggingface.co/collections/dkarthikeyan1/tcr-translate-672d0c28f20af220669d073c) for the latest.
@@ -93,6 +93,12 @@ uncond_cdr3b_sequences = [re.sub(r'\[.*\]', '', x) for x in tokenizer.batch_deco
 ```
 
 If you would like to see a more detailed demo of our model, please check out our Colab notebook [Coming Soon](google.com).
+
+### Contributing
+
+We are currently in the process of making the evaluation code less HuggingFace specific and more modular. If you would like to contribute, please reach out to us at dkarthikeyan1@unc.edu
+with a brief description of your background and how you would like to contribute. Alternatively, if you have any feature requests or bug reports, please open an issue on this repository.
+Thank you!
 
 ### Contact
 
