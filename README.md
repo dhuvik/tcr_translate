@@ -1,5 +1,8 @@
 # TCR-TRANSLATE: Conditional Generation of Real Antigen Specific T-cell Receptor Sequences
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15068618.svg)](https://doi.org/10.5281/zenodo.15068618)
+[![DOI:10.1101/2024.11.11.623124](http://img.shields.io/badge/DOI-10.1101/2024.11.11.623124-B31B1B.svg)](https://doi.org/10.1101/2024.11.11.623124)
+
 In this work, we present a novel framework for addressing the task of antigen-specific TCR design in the face
 of a well known data sparsity issue that has hindered numerous efforts at modeling TCR:pMHC specificity. 
 We apply techniques from low-resourced machine translation to standard sequence-to-sequence modeling, including data augmentation, 
