@@ -43,10 +43,10 @@ num_tcrs = 10
 # Define the number of beams to explore (recommended: 3x the number of TCRs)
 num_beams = 30
 
-outputs = tcrt5.generate(**encoded_pmhc, max_new_tokens=25, num_return_sequences=num_tcrs, num_beams=num_beams)
+outputs = tcrt5.generate(**encoded_pmhc, max_new_tokens=25, num_return_sequences=num_tcrs, num_beams=num_beams, return_dict_in_generate=True)
 
 # Use regex to get out the [TCR] tag
-cdr3b_sequences = [re.sub(r'\[.*\]', '', x) for x in tokenizer.batch_decode(outputs, skip_special_tokens=True)]
+cdr3b_sequences = [re.sub(r'\[.*\]', '', x) for x in tokenizer.batch_decode(outputs['sequences'], skip_special_tokens=True)]
 
 >>> cdr3b_sequences
 
