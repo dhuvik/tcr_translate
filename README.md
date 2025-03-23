@@ -76,10 +76,10 @@ num_tcrs = 10
 # Define the number of beams to explore (recommended: 3x the number of TCRs)
 num_beams = 30
 
-unconditional_outputs = tcrt5.generate(max_new_tokens=25, num_return_sequences=num_tcrs, num_beams=num_beams)
+unconditional_outputs = tcrt5.generate(max_new_tokens=25, num_return_sequences=num_tcrs, num_beams=num_beams, return_dict_in_generate=True)
 
 # Use regex to get out the [TCR] tag
-uncond_cdr3b_sequences = [re.sub(r'\[.*\]', '', x) for x in tokenizer.batch_decode(unconditional_outputs, skip_special_tokens=True)]
+uncond_cdr3b_sequences = [re.sub(r'\[.*\]', '', x) for x in tokenizer.batch_decode(unconditional_outputs['sequences'], skip_special_tokens=True)]
 
 >>> uncond_cdr3b_sequences
 
