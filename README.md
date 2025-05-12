@@ -17,8 +17,7 @@ whole receptor TCR design that can significantly accelerate therapeutic developm
 
 ### How to use
 
-This repository contains the raw data, results, and code for training and evaluating our flagship TCRT5 (finetuned) model. If you would 
-like to use our model directly, we make our model available on HuggingFace's model hub. You can find the models here: 
+This repository contains the raw data, results, and code for training and evaluating our flagship TCRT5 (finetuned) model. Typcial installation can be done using pip. Installation should take only a few minutes. If you would like to use our model directly, we make our model available on HuggingFace's model hub. You can find the models here: 
  
  * [TCRT5 (finetuned)](https://huggingface.co/dkarthikeyan1/tcrt5_ft_tcrdb)
  * [TCRT5 (pre-trained)](https://huggingface.co/dkarthikeyan1/tcrt5_pre_tcrdb)
@@ -28,7 +27,7 @@ Additional models will be released as they are evaluated and deemed useful. Plea
  
 ### Model Usage
 
-You can use this model directly for conditional CDR3b generation:
+You can use this model directly for conditional CDR3b generation in a few seconds (scales with the number of beams searched):
 
 ```python
 import re
