@@ -1,7 +1,7 @@
 # TCR-TRANSLATE: Conditional Generation of Real Antigen Specific T-cell Receptor Sequences
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15068618.svg)](https://doi.org/10.5281/zenodo.15068618)
-[![DOI:10.1101/2024.11.11.623124](http://img.shields.io/badge/DOI-10.1101/2024.11.11.623124-B31B1B.svg)](https://doi.org/10.1101/2024.11.11.623124)
+[![DOI:10.1038/s42256-025-01096-6](http://img.shields.io/badge/DOI-10.1038/s42256-025-01096-6-B31B1B.svg)](https://doi.org/10.1101/2024.11.11.623124)
 
 In this work, we present a novel framework for addressing the task of antigen-specific TCR design in the face
 of a well known data sparsity issue that has hindered numerous efforts at modeling TCR:pMHC specificity. 
@@ -98,7 +98,7 @@ If you would like to see a more detailed demo of our model, please check out our
 
 ### Contributing
 
-We are currently in the process of making the evaluation code less HuggingFace specific and more modular. If you would like to contribute, please reach out to us at dkarthikeyan1@unc.edu
+We are currently in the process of exploring many things branching off of TCR-TRANSLATE. If you would like to contribute, please reach out to us at dkarthikeyan1@unc.edu
 with a brief description of your background and how you would like to contribute. Alternatively, if you have any feature requests or bug reports, please open an issue on this repository.
 Thank you!
 
@@ -109,10 +109,20 @@ For more information please reach out to us at: {dkarthikeyan1, alex.rubinsteyn}
 ### Citation
 
 ```
-@article{dkarthikeyan2024tcrtranslate,
-title={TCR-TRANSLATE: Conditional Generation of Real Antigen-Specific T-cell Receptor Sequences},
-author={Dhuvarakesh Karthikeyan and Colin Raffel and Benjamin Vincent and Alex Rubinsteyn},
-journal={bioArXiv},
-year={2024},
+@Article{Karthikeyan2025,
+author={Karthikeyan, Dhuvarakesh
+and Bennett, Sarah N.
+and Reynolds, Amy G.
+and Vincent, Benjamin G.
+and Rubinsteyn, Alex},
+title={Conditional generation of real antigen-specific T cell receptor sequences},
+journal={Nature Machine Intelligence},
+year={2025},
+month={Sep},
+day={08},
+abstract={Despite recent advances in T cell receptor (TCR) engineering, designing functional TCRs against arbitrary targets remains challenging due to complex rules governing cross-reactivity and limited paired data. Here we present TCR-TRANSLATE, a sequence-to-sequence framework that adapts low-resource machine translation techniques to generate antigen-specific TCR sequences against unseen epitopes. By evaluating 12 model variants of the BART and T5 model architectures, we identified key factors affecting performance and utility, revealing discordances between these objectives. Our flagship model, TCRT5, outperforms existing approaches on computational benchmarks, prioritizing functionally relevant sequences at higher ranks. Most significantly, we experimentally validated a computationally designed TCR against Wilms' tumour antigen, a therapeutically relevant target in leukaemia, excluded from our training and validation sets. Although the identified TCR shows cross-reactivity with pathogen-derived peptides, highlighting limitations in specificity, our work represents the successful computational design of a functional TCR construct against a non-viral epitope from the target sequence alone. Our findings establish a foundation for computational TCR design and reveal current limitations in data availability and methodology, providing a framework for accelerating personalized immunotherapy by reducing the search space for novel targets.},
+issn={2522-5839},
+doi={10.1038/s42256-025-01096-6},
+url={https://doi.org/10.1038/s42256-025-01096-6}
 }
 ```
