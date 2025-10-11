@@ -109,7 +109,7 @@ For more information please reach out to us at: {dkarthikeyan1, alex.rubinsteyn}
 ### Citation
 
 ```
-@Article{Karthikeyan2025,
+@Article{Karthikeyan2025_tcrtranslate,
 author={Karthikeyan, Dhuvarakesh
 and Bennett, Sarah N.
 and Reynolds, Amy G.
