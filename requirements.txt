@@ -3,7 +3,7 @@ einops==0.8.1
 logomaker==0.8
 matplotlib==3.8.4
 mhcgnomes==1.8.6
-nltk==3.8.1
+nltk==3.9.4
 numpy==1.24.4
 olga==1.2.4
 pandas==2.2.3
